@@ -1,2 +1,3 @@
-# email-template
+# Email Template
+
 Responsive newsletter template
