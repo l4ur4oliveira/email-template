@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Email Template</title>
     <style type="text/css">
         body { -webkit-text-size-adjust: none; }
@@ -13,19 +13,25 @@
                 color: inherit;
                 text-decoration: inherit;
             }
-            table[class="wrap"] {
-                width: 310px !important;
+            .wrap {
                 -webkit-text-size-adjust: none;
+                width: 100% !important;
+                padding: 0 10px !important;
             }
-            *[class*="hidden"] { display: none !important; }
-            *[class*="no-float"] {
+            .hidden { display: none !important; }
+            .no-float {
                 float: none !important;
                 width: 100% !important;
             }
-            td[class*="no-float"] { display: block !important; }
-            img[class*="resize-img"] {
+            td.no-float { display: block !important; }
+            .resize-img] {
                 width: 100% !important;
                 height: auto !important;
+            }
+            .snippet td {
+                text-align: center !important;
+                font-size: 10px !important;
+                line-height: 20px !important;
             }
         }
     </style>
@@ -34,10 +40,23 @@
     <table width="100%" align="center" cellpadding="0" cellspacing="0">
         <tr>
             <td align="center">
-                <table width="640" align="center" cellpadding="0" cellspacing="0" class="wrap">
+                <table width="720" align="center" cellpadding="0" cellspacing="0" class="wrap">
                     <!-- Pre-header -->
                     <tr>
-                        <td align="center" style="padding:20px 0; background-color:#cccccc;">Pre-header</td>
+                        <td align="center" style="padding:20px 0; background-color:#cccccc;">
+                            <table width="100%" cellpadding="0" cellspacing="0" class="snippet">
+                                <tr>
+                                    <td width="420" valign="top" style="font-family:sans-serif; font-size:13px;" class="no-float">
+                                        <a href="#" target="_blank" style="text-decoration:none; color:#999999;">
+                                            Snippet clicável com até 90 caracteres. Snippet clicável com até 90 caracteres.
+                                        </a>
+                                    </td>
+                                    <td width="180" align="right" valign="top" style="font-family:sans-serif; font-size:13px; color:#999999;" class="no-float">
+                                        <a href="#" style="color:#999999;">Descadastre-se</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" style="color:#999999;">Ver na web</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
                     </tr>
                     <!-- / -->
                     <!-- Header -->
