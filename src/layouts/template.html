@@ -33,6 +33,7 @@
                 font-size: 10px !important;
                 line-height: 20px !important;
             }
+            .header { text-align: center !important; }
         }
     </style>
 </head>
@@ -42,37 +43,19 @@
             <td align="center">
                 <table width="720" align="center" cellpadding="0" cellspacing="0" class="wrap">
                     <!-- Pre-header -->
-                    <tr>
-                        <td align="center" style="padding:20px 0; background-color:#cccccc;">
-                            <table width="100%" cellpadding="0" cellspacing="0" class="snippet">
-                                <tr>
-                                    <td width="420" valign="top" style="font-family:sans-serif; font-size:13px;" class="no-float">
-                                        <a href="#" target="_blank" style="text-decoration:none; color:#999999;">
-                                            Snippet clicável com até 90 caracteres. Snippet clicável com até 90 caracteres.
-                                        </a>
-                                    </td>
-                                    <td width="180" align="right" valign="top" style="font-family:sans-serif; font-size:13px; color:#999999;" class="no-float">
-                                        <a href="#" style="color:#999999;">Descadastre-se</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" style="color:#999999;">Ver na web</a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <!-- / -->
+                    <%- @partial('pre-header') %>
                     <!-- Header -->
-                    <tr>
-                        <td align="center" style="padding:20px 0; background-color:#dddddd;">Header</td>
-                    </tr>
+                    <%- @partial('header') %>
                     <!-- / -->
                     <!-- Content -->
                     <tr>
-                        <td align="center" style="padding:20px 0; background-color:#cccccc;">Content</td>
+                        <td align="center" style="padding:20px 0; background-color:#cccccc;">
+                            <%- @content %>
+                        </td>
                     </tr>
                     <!-- / -->
                     <!-- Footer -->
-                    <tr>
-                        <td align="center" style="padding:20px 0; background-color:#dddddd;">Footer</td>
-                    </tr>
+                    <%- @partial('footer') %>
                     <!-- / -->
                 </table>
             </td>

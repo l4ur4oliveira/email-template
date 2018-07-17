@@ -1,7 +1,7 @@
 {
   "name": "EmailTemplate",
-  "version": "0.1.0",
-  "description": "Email structure - Lojas Renner",
+  "version": "1.0.0",
+  "description": "Email Template",
   "dependencies": {
     "docpad": "~6.78.1",
     "docpad-plugin-eco": "~2.1.0",

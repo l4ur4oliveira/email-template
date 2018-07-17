@@ -1,0 +1,10 @@
+---
+title: "Email Template With DocPad"
+layout: "default"
+---
+
+<% for box in @boxes : %>
+
+	<%- @partial("box/#{box}.html.eco", @) %>
+
+<% end %>
